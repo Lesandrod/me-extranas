@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Hola me extrañas?</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div class="conte">
+        <p>Hola, ¿me extrañas?</p>
+        <img src="nikol2.jpeg" alt="nikol" width="200px">
+    </div>
+    <div class="contene">
+        
+        <button id="yesBtn" onclick="CuandoDigaSi()">SI</button>
+         
+        <button id="noBtn">No</button>
+    </div>
+    <script>
+        function CuandoDigaSi(){
+           
+            rsp1 = "Sabía que dirías que sí ♥ Yo tambien te extraño";
+            rsp2 = "♥ ♥ ♥";
+            document.getElementById("lblResultado").innerHTML = rsp1;
+            document.getElementById("lblResultado1").innerHTML = rsp2;
+        }
+        const noBtn = document.querySelector('#noBtn');
+
+        noBtn.addEventListener('mouseover', function () {
+        const randomX = parseInt(Math.random()*100);
+        const randomY = parseInt(Math.random()*100);
+        noBtn.style.setProperty('top',randomY+'%');
+        noBtn.style.setProperty('left',randomX+'%');
+        noBtn.style.setProperty('transform',`translate(-${randomX}%,-${randomY}%)`);
+        })
+    </script>
+    
+    
+    
+    <div class="contenedor">
+        <p id="lblResultado"></p>
+        <p id="lblResultado1"></p>
+
+    </div>
+    
+</body>
+</html>

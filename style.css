@@ -1,0 +1,53 @@
+body {
+    background: linear-gradient(to right, #c9ff4b, hsla(0, 97%, 39%, 0.904));
+   
+
+    overflow: hidden
+}
+.conte{
+    text-align: center;
+   
+}
+.contenedor{
+    padding-top: 3%;
+    text-align: center;
+}
+button{
+    border: 2px solid #000000;
+   
+    border-radius: 45%;
+    font-size: xx-large;
+    padding: 0.75em;
+    background-color: rgb(201, 160, 26);
+    
+}
+
+p{
+    font-size: 2.78em;
+    
+}
+#lblResultado{
+    font-size: x-large;
+}
+#lblResultado1{
+    font-size: xx-large;
+}
+
+.contene{
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+}
+#noBtn{
+    position: absolute;
+}
+#yesBtn{
+    transform: translate(-137%,0);
+    
+
+}
+img{
+    
+    border-radius: 20%;
+    border: 0.8px solid #000000;
+}
